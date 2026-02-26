@@ -87,3 +87,12 @@ article {
     grid-column: span 3;
   }
 }
+/* ====== Header Styling ====== */
+header {
+  text-align: center; /* Center the title and description */
+  padding: calc(var(--space) * 3) var(--space);
+}
+
+header h1 {
+  margin-bottom: 0.5rem; /* Space between h1 and p */
+}
