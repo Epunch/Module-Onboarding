@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>My form exercise</title>
-    <meta name="description" content="" />
+    <meta
+      name="description"
+      content="T-shirt order form for customer confirmation and product selection."
+    />
+    <title>T-Shirt Order Form - Product Pick</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
@@ -13,54 +16,67 @@
     </header>
     <main>
       <form>
-        <p>
-          <label for="full-name">Full Name:</label>
-          <input
-            type="text"
-            id="full-name"
-            name="full-name"
-            minlength="2"
-            required
-          />
-        </p>
-
-        <p>
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="email" required />
-        </p>
         <fieldset>
-          <legend>Pick a Colour:</legend>
-          <input type="radio" id="red" name="colour" value="red" required />
-          <label for="red">Red</label><br />
+          <legend>Contact Information</legend>
+          <p>
+            <label for="full-name">Full Name:</label>
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              minlength="2"
+              required
+            />
+          </p>
 
-          <input type="radio" id="blue" name="colour" value="blue" />
-          <label for="blue">Blue</label><br />
-
-          <input type="radio" id="green" name="colour" value="green" />
-          <label for="green">Green</label>
+          <p>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+          </p>
         </fieldset>
 
-        <p>
-          <label for="size">Size:</label>
-          <select id="size" name="size" required>
-            <option value="">--Select a size--</option>
-            <option value="xs">XS</option>
-            <option value="s">S</option>
-            <option value="m">M</option>
-            <option value="l">L</option>
-            <option value="xl">XL</option>
-            <option value="xxl">XXL</option>
-          </select>
-        </p>
-        <!-- write your html here-->
-        <!-- 
-          try writing out the requirements first as comments
-        this will also help you fill in your PR message later-->
+        <br />
+
+        <fieldset>
+          <legend>Pick a Colour:</legend>
+          <p>
+            <input type="radio" id="red" name="colour" value="red" required />
+            <label for="red">Red</label>
+          </p>
+          <p>
+            <input type="radio" id="blue" name="colour" value="blue" />
+            <label for="blue">Blue</label>
+          </p>
+          <p>
+            <input type="radio" id="green" name="colour" value="green" />
+            <label for="green">Green</label>
+          </p>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+          <legend>Product Size</legend>
+          <p>
+            <label for="size">Size:</label>
+            <select id="size" name="size" required>
+              <option value="">--Select a size--</option>
+              <option value="xs">XS</option>
+              <option value="s">S</option>
+              <option value="m">M</option>
+              <option value="l">L</option>
+              <option value="xl">XL</option>
+              <option value="xxl">XXL</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <br />
+        <button type="submit">Submit Order</button>
       </form>
     </main>
     <footer>
-      <!-- change to your name-->
-      <h2>By HOMEWORK SOLUTION</h2>
+      <p>By MEYSAM RAZAGH</p>
     </footer>
   </body>
 </html>
