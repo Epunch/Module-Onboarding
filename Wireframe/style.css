@@ -87,18 +87,3 @@ article {
     grid-column: span 3;
   }
 }
-/* ====== Header Styling ====== */
-header {
-  text-align: center; /* Center the title and description */
-  padding: calc(var(--space) * 3) var(--space);
-}
-
-header h1 {
-  margin-bottom: 0.5rem; /* Space between h1 and p */
-}
-/* Add an aspect ratio to prevent layout shifts */
-article img {
-  aspect-ratio: 16 / 9; /* Set a consistent shape for all article images */
-  background-color: #f0f0f0; /* Show a placeholder color while loading */
-  content-visibility: auto; /* Browser optimization for off-screen images */
-}
